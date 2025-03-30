@@ -1,0 +1,42 @@
+﻿<Window x:Class="CinemaManagementSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CinemaManagementSystem"
+        mc:Ignorable="d"
+        Title="Система управления кинотеатром" Height="600" Width="1000"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Верхняя панель с меню -->
+        <Menu Grid.Row="0">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Выход" Click="ExitMenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="Фильмы">
+                <MenuItem Header="Список фильмов" Click="FilmsListMenuItem_Click"/>
+                <MenuItem Header="Добавить фильм" Click="AddFilmMenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="Сеансы">
+                <MenuItem Header="Расписание" Click="ScheduleMenuItem_Click"/>
+                <MenuItem Header="Добавить сеанс" Click="AddSessionMenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="Билеты">
+                <MenuItem Header="Продажа билетов" Click="SellTicketsMenuItem_Click"/>
+                <MenuItem Header="Бронирование" Click="BookingMenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="Отчеты">
+                <MenuItem Header="Ежедневный отчет" Click="DailyReportMenuItem_Click"/>
+                <MenuItem Header="Статистика" Click="StatisticsMenuItem_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Основная область контента -->
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
