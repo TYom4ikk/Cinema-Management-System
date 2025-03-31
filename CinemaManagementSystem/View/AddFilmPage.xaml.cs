@@ -50,14 +50,21 @@ namespace CinemaManagementSystem.View
                     {
                         Title = _film.Title,
                         Duration = _film.Duration,
-                        AgeRestriction = GetAgeRestrictionValue(AgeRestrictionComboBox.SelectedItem.ToString()),
+                        GenreDescription = _film.GenreDescription,
+                        AgeRestriction = _film.AgeRestriction,
                         Description = _film.Description
                     };
 
-                    // Добавляем выбранный жанр
-                    if (GenreComboBox.SelectedItem is Genres selectedGenre)
+                    // Добавляем связи с жанрами
+                    foreach (var genre in _film.Genres)
                     {
-                        newFilm.Genres.Add(selectedGenre);
+                        newFilm.Genres.Add(genre);
+                    }
+
+                    // Добавляем связи со странами производства
+                    foreach (var country in _film.ProducingCompanies)
+                    {
+                        newFilm.ProducingCompanies.Add(country);
                     }
 
                     // Сохраняем в базу данных

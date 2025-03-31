@@ -14,16 +14,6 @@ namespace CinemaManagementSystem.View
             InitializeComponent();
             _actor = new Actors();
             DataContext = _actor;
-
-            try
-            {
-                // Загрузка списка стран
-                CountryComboBox.ItemsSource = Core.GetContext().Countries;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка при загрузке списка стран: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)

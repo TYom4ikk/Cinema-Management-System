@@ -24,3 +24,5 @@ C:\Users\zhaku\Desktop\Курсовые\Cinema-Management-System\CinemaManagemen
 C:\Users\zhaku\Desktop\Курсовые\Cinema-Management-System\CinemaManagementSystem\obj\Debug\CinemaManagementSystem.pdb
 C:\Users\zhaku\Desktop\Курсовые\Cinema-Management-System\CinemaManagementSystem\obj\Debug\View\AddActorPage.baml
 C:\Users\zhaku\Desktop\Курсовые\Cinema-Management-System\CinemaManagementSystem\obj\Debug\View\AddActorPage.g.cs
+C:\Users\zhaku\Desktop\Курсовые\Cinema-Management-System\CinemaManagementSystem\obj\Debug\View\ActorListPage.baml
+C:\Users\zhaku\Desktop\Курсовые\Cinema-Management-System\CinemaManagementSystem\obj\Debug\View\ActorListPage.g.cs

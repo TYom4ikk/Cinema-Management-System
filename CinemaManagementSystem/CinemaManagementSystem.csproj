@@ -66,6 +66,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="View\ActorListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\AddActorPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -140,6 +144,9 @@
     </Compile>
     <Compile Include="Model\Workers.cs">
       <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View\ActorListPage.xaml.cs">
+      <DependentUpon>ActorListPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\AddActorPage.xaml.cs">
       <DependentUpon>AddActorPage.xaml</DependentUpon>

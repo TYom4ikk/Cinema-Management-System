@@ -3,22 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\view\\addactorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\addactorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|c:\\users\\zhaku\\desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\cinema-management-system\\cinemamanagementsystem\\model\\countries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:model\\countries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|c:\\users\\zhaku\\desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\cinema-management-system\\cinemamanagementsystem\\model\\actors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:model\\actors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|c:\\users\\zhaku\\desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\cinema-management-system\\cinemamanagementsystem\\view\\filmslistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\filmslistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\view\\addfilmpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\addfilmpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
@@ -27,12 +11,36 @@
       "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\addfilmpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\model\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:model\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\view\\filmslistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\filmslistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\view\\filmslistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\filmslistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|c:\\users\\zhaku\\desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\cinema-management-system\\cinemamanagementsystem\\view\\actorlistpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\actorlistpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|c:\\users\\zhaku\\desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\cinema-management-system\\cinemamanagementsystem\\view\\actorlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\actorlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|c:\\users\\zhaku\\desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\cinema-management-system\\cinemamanagementsystem\\view\\addactorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\addactorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\view\\addactorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\addactorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\model\\actors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:model\\actors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\model\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:model\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\model\\model.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
@@ -58,20 +66,81 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Countries.cs",
-              "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\Model\\Countries.cs",
-              "RelativeDocumentMoniker": "Model\\Countries.cs",
-              "ToolTip": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\Model\\Countries.cs",
-              "RelativeToolTip": "Model\\Countries.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ActorListPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\ActorListPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\ActorListPage.xaml.cs",
+              "ToolTip": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\ActorListPage.xaml.cs",
+              "RelativeToolTip": "View\\ActorListPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T06:01:07.506Z",
+              "WhenOpened": "2025-03-31T06:05:35.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddFilmPage.xaml",
+              "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddFilmPage.xaml",
+              "RelativeDocumentMoniker": "View\\AddFilmPage.xaml",
+              "ToolTip": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddFilmPage.xaml",
+              "RelativeToolTip": "View\\AddFilmPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-26T05:35:05.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddFilmPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddFilmPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\AddFilmPage.xaml.cs",
+              "ToolTip": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddFilmPage.xaml.cs*",
+              "RelativeToolTip": "View\\AddFilmPage.xaml.cs*",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwC0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T05:35:23.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddActorPage.xaml",
+              "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddActorPage.xaml",
+              "RelativeDocumentMoniker": "View\\AddActorPage.xaml",
+              "ToolTip": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddActorPage.xaml",
+              "RelativeToolTip": "View\\AddActorPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-26T06:01:37.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FilmsListPage.xaml",
+              "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\FilmsListPage.xaml",
+              "RelativeDocumentMoniker": "View\\FilmsListPage.xaml",
+              "ToolTip": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\FilmsListPage.xaml",
+              "RelativeToolTip": "View\\FilmsListPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-24T11:41:48.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FilmsListPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\FilmsListPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\FilmsListPage.xaml.cs",
+              "ToolTip": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\FilmsListPage.xaml.cs",
+              "RelativeToolTip": "View\\FilmsListPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T11:44:01.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Actors.cs",
               "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\Model\\Actors.cs",
               "RelativeDocumentMoniker": "Model\\Actors.cs",
@@ -79,48 +148,36 @@
               "RelativeToolTip": "Model\\Actors.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T05:51:54.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T05:51:54.435Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "AddActorPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddActorPage.xaml.cs",
               "RelativeDocumentMoniker": "View\\AddActorPage.xaml.cs",
               "ToolTip": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddActorPage.xaml.cs",
               "RelativeToolTip": "View\\AddActorPage.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAASwBQAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T05:44:23.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AddFilmPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddFilmPage.xaml.cs",
-              "RelativeDocumentMoniker": "View\\AddFilmPage.xaml.cs",
-              "ToolTip": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddFilmPage.xaml.cs",
-              "RelativeToolTip": "View\\AddFilmPage.xaml.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAjwCQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T05:35:23.96Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AddFilmPage.xaml",
-              "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddFilmPage.xaml",
-              "RelativeDocumentMoniker": "View\\AddFilmPage.xaml",
-              "ToolTip": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddFilmPage.xaml",
-              "RelativeToolTip": "View\\AddFilmPage.xaml",
+              "Title": "ActorListPage.xaml",
+              "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\ActorListPage.xaml",
+              "RelativeDocumentMoniker": "View\\ActorListPage.xaml",
+              "ToolTip": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\ActorListPage.xaml",
+              "RelativeToolTip": "View\\ActorListPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-26T05:35:05.31Z"
+              "WhenOpened": "2025-03-31T06:05:19.817Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Core.cs",
               "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\Model\\Core.cs",
               "RelativeDocumentMoniker": "Model\\Core.cs",
@@ -132,43 +189,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FilmsListPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\FilmsListPage.xaml.cs",
-              "RelativeDocumentMoniker": "View\\FilmsListPage.xaml.cs",
-              "ToolTip": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\FilmsListPage.xaml.cs",
-              "RelativeToolTip": "View\\FilmsListPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T11:44:01.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FilmsListPage.xaml",
-              "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\FilmsListPage.xaml",
-              "RelativeDocumentMoniker": "View\\FilmsListPage.xaml",
-              "ToolTip": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\View\\FilmsListPage.xaml",
-              "RelativeToolTip": "View\\FilmsListPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-24T11:41:48.751Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-24T08:07:15.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Model.edmx [Diagram1]",
               "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\Model\\Model.edmx",
               "RelativeDocumentMoniker": "Model\\Model.edmx",
@@ -179,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\zhaku\\Desktop\\\u041A\u0443\u0440\u0441\u043E\u0432\u044B\u0435\\Cinema-Management-System\\CinemaManagementSystem\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",

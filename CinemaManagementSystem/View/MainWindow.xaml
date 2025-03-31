@@ -1,0 +1,3 @@
+<Button Content="Фильмы" 
+        Click="FilmsButton_Click"
+ 
