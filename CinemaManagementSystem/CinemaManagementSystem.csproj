@@ -78,9 +78,25 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\AddSessionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SchedulePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SellTicketPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\FilmsListPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\SalesStatisticsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -155,9 +171,21 @@
     <Compile Include="View\AddFilmPage.xaml.cs">
       <DependentUpon>AddFilmPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\AddSessionPage.xaml.cs">
+      <DependentUpon>AddSessionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SchedulePage.xaml.cs">
+      <DependentUpon>SchedulePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SellTicketPage.xaml.cs">
+      <DependentUpon>SellTicketPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\FilmsListPage.xaml.cs">
       <DependentUpon>FilmsListPage.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\SalesStatisticsPage.xaml.cs">
+      <DependentUpon>SalesStatisticsPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

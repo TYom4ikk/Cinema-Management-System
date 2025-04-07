@@ -22,6 +22,10 @@
                 <MenuItem Header="Список фильмов" Click="FilmsListMenuItem_Click"/>
                 <MenuItem Header="Добавить фильм" Click="AddFilmMenuItem_Click"/>
             </MenuItem>
+            <MenuItem Header="Актеры">
+                <MenuItem Header="Список актеров" Click="ActorListMenuItem_Click"/>
+                <MenuItem Header="Добавить актера" Click="AddActorMenuItem_Click"/>
+            </MenuItem>
             <MenuItem Header="Сеансы">
                 <MenuItem Header="Расписание" Click="ScheduleMenuItem_Click"/>
                 <MenuItem Header="Добавить сеанс" Click="AddSessionMenuItem_Click"/>
@@ -32,7 +36,7 @@
             </MenuItem>
             <MenuItem Header="Отчеты">
                 <MenuItem Header="Ежедневный отчет" Click="DailyReportMenuItem_Click"/>
-                <MenuItem Header="Статистика" Click="StatisticsMenuItem_Click"/>
+                <MenuItem Header="Статистика продаж" Click="StatisticsMenuItem_Click"/>
             </MenuItem>
         </Menu>
 

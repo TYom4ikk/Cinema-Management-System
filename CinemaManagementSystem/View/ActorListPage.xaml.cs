@@ -6,9 +6,9 @@ using CinemaManagementSystem.Model;
 
 namespace CinemaManagementSystem.View
 {
-    public partial class ActorsListPage : Page
+    public partial class ActorListPage : Page
     {
-        public ActorsListPage()
+        public ActorListPage()
         {
             InitializeComponent();
             LoadActors();

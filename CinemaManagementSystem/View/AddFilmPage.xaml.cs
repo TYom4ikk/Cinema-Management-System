@@ -21,117 +21,76 @@ namespace CinemaManagementSystem.View
     /// </summary>
     public partial class AddFilmPage : Page
     {
-        private Films _film;
+        private Films _currentFilm = new Films();
 
         public AddFilmPage()
         {
             InitializeComponent();
-            _film = new Films();
-            DataContext = _film;
+            DataContext = _currentFilm;
+            LoadComboBoxes();
+        }
 
-            // Загрузка жанров
-            GenreComboBox.ItemsSource = Core.GetContext().Genres.ToList();
+        private void LoadComboBoxes()
+        {
+            try
+            {
+                // Загружаем жанры
+                GenreComboBox.ItemsSource = Core.GetContext().Genres.ToList();
 
-            // Загрузка стран
-            CountryComboBox.ItemsSource = Core.GetContext().Countries.ToList();
+                // Загружаем страны
+                CountryComboBox.ItemsSource = Core.GetContext().Countries.ToList();
 
-            // Загрузка возрастных ограничений
-            AgeRestrictionComboBox.ItemsSource = new List<string> { "0+", "6+", "12+", "16+", "18+" };
+                // Заполняем возрастные ограничения
+                AgeRestrictionComboBox.ItemsSource = new[] { 0, 6, 12, 16, 18 };
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при загрузке данных: {ex.Message}", 
+                              "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            if (ValidateInput())
+            try
             {
-                try
+                // Проверяем обязательные поля
+                if (string.IsNullOrWhiteSpace(_currentFilm.Title))
                 {
-                    // Создаем новый фильм
-                    var newFilm = new Films
-                    {
-                        Title = _film.Title,
-                        Duration = _film.Duration,
-                        GenreDescription = _film.GenreDescription,
-                        AgeRestriction = _film.AgeRestriction,
-                        Description = _film.Description
-                    };
-
-                    // Добавляем связи с жанрами
-                    foreach (var genre in _film.Genres)
-                    {
-                        newFilm.Genres.Add(genre);
-                    }
-
-                    // Добавляем связи со странами производства
-                    foreach (var country in _film.ProducingCompanies)
-                    {
-                        newFilm.ProducingCompanies.Add(country);
-                    }
-
-                    // Сохраняем в базу данных
-                    Core.GetContext().Films.Add(newFilm);
-                    Core.GetContext().SaveChanges();
-
-                    MessageBox.Show("Фильм успешно добавлен!", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
-                    NavigationService.Navigate(new FilmsListPage());
+                    MessageBox.Show("Введите название фильма!", "Ошибка", 
+                                  MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
                 }
-                catch (Exception ex)
+
+                if (_currentFilm.Duration <= 0)
                 {
-                    MessageBox.Show($"Ошибка при сохранении: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Введите корректную длительность фильма!", "Ошибка", 
+                                  MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
                 }
-            }
-        }
 
-        private byte GetAgeRestrictionValue(string ageRestriction)
-        {
-            switch (ageRestriction)
+                // Сохраняем выбранные значения
+                _currentFilm.AgeRestriction = (byte)(AgeRestrictionComboBox.SelectedItem ?? 0);
+
+                // Добавляем фильм в базу данных
+                if (_currentFilm.Id == 0)
+                    Core.GetContext().Films.Add(_currentFilm);
+
+                Core.GetContext().SaveChanges();
+                MessageBox.Show("Фильм успешно сохранен!", "Информация", 
+                              MessageBoxButton.OK, MessageBoxImage.Information);
+                NavigationService?.GoBack();
+            }
+            catch (Exception ex)
             {
-                case "0+":
-                    return 0;
-                case "6+":
-                    return 6;
-                case "12+":
-                    return 12;
-                case "16+":
-                    return 16;
-                case "18+":
-                    return 18;
-                default:
-                    return 0;
+                MessageBox.Show($"Ошибка при сохранении фильма: {ex.Message}", 
+                              "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-        }
-
-        private bool ValidateInput()
-        {
-            if (string.IsNullOrWhiteSpace(_film.Title))
-            {
-                MessageBox.Show("Введите название фильма", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return false;
-            }
-
-            if (_film.Duration <= 0)
-            {
-                MessageBox.Show("Введите корректную длительность фильма", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return false;
-            }
-
-            if (GenreComboBox.SelectedItem == null)
-            {
-                MessageBox.Show("Выберите жанр фильма", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return false;
-            }
-
-            if (AgeRestrictionComboBox.SelectedItem == null)
-            {
-                MessageBox.Show("Выберите возрастное ограничение", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return false;
-            }
-
-            return true;
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new FilmsListPage());
+            NavigationService?.GoBack();
         }
     }
 }

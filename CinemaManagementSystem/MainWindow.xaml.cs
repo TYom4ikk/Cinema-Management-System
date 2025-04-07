@@ -24,11 +24,12 @@ namespace CinemaManagementSystem
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new FilmsListPage()); // Открываем список фильмов при запуске
         }
 
         private void ExitMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            Application.Current.Shutdown();
         }
 
         private void FilmsListMenuItem_Click(object sender, RoutedEventArgs e)
@@ -41,34 +42,69 @@ namespace CinemaManagementSystem
             MainFrame.Navigate(new AddFilmPage());
         }
 
+        private void ActorListMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new ActorListPage());
+        }
+
+        private void AddActorMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new AddActorPage());
+        }
+
         private void ScheduleMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            // TODO: Реализовать просмотр расписания
+            MainFrame.Navigate(new SchedulePage());
         }
 
         private void AddSessionMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            // TODO: Реализовать добавление сеанса
+            MainFrame.Navigate(new AddSessionPage());
         }
 
         private void SellTicketsMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            // TODO: Реализовать продажу билетов
+            MainFrame.Navigate(new SchedulePage());
         }
 
         private void BookingMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            // TODO: Реализовать бронирование
+            MessageBox.Show("Функционал в разработке", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         private void DailyReportMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            // TODO: Реализовать ежедневный отчет
+            MessageBox.Show("Функционал в разработке", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         private void StatisticsMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            // TODO: Реализовать статистику
+            MainFrame.Navigate(new SalesStatisticsPage());
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            var menuItem = sender as MenuItem;
+            if (menuItem == null) return;
+
+            switch (menuItem.Header.ToString())
+            {
+                case "Фильмы":
+                    MainFrame.Navigate(new FilmsListPage());
+                    break;
+                case "Актеры":
+                    MainFrame.Navigate(new ActorListPage());
+                    break;
+                case "Сеансы":
+                    MainFrame.Navigate(new AddSessionPage());
+                    break;
+                case "Расписание":
+                    MainFrame.Navigate(new SchedulePage());
+                    break;
+                case "Статистика продаж":
+                    MainFrame.Navigate(new SalesStatisticsPage());
+                    break;
+            }
         }
     }
 }

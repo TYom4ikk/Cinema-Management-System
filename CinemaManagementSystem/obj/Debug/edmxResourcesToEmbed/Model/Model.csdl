@@ -111,6 +111,7 @@
     <Property Name="SessionId" Type="Int64" Nullable="false" />
     <Property Name="Price" Type="Int32" Nullable="false" />
     <Property Name="SeatId" Type="Int32" Nullable="false" />
+    <Property Name="SaleDateTime" Type="DateTime" Nullable="false" Precision="3" />
     <NavigationProperty Name="Seats" Relationship="Self.FK_Tickets_Seats" FromRole="Tickets" ToRole="Seats" />
     <NavigationProperty Name="Sessions" Relationship="Self.FK_Tickets_Sessions" FromRole="Tickets" ToRole="Sessions" />
   </EntityType>

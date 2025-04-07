@@ -1,4 +1,4 @@
-﻿<Page x:Class="CinemaManagementSystem.View.ActorsListPage"
+﻿<Page x:Class="CinemaManagementSystem.View.ActorListPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       Title="Список актеров" Height="600" Width="800">

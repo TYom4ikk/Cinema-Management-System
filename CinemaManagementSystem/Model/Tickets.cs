@@ -18,6 +18,7 @@ namespace CinemaManagementSystem.Model
         public long SessionId { get; set; }
         public int Price { get; set; }
         public int SeatId { get; set; }
+        public System.DateTime SaleDateTime { get; set; }
     
         public virtual Seats Seats { get; set; }
         public virtual Sessions Sessions { get; set; }

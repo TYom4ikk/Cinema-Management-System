@@ -1,6 +1,7 @@
+using System;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using System.Linq;
 using CinemaManagementSystem.Model;
 
 namespace CinemaManagementSystem.View
@@ -15,37 +16,50 @@ namespace CinemaManagementSystem.View
 
         private void LoadFilms()
         {
-            var films = Core.GetContext().Films.ToList();
-            FilmsDataGrid.ItemsSource = films;
+            try
+            {
+                var films = Core.GetContext().Films.ToList();
+                FilmsDataGrid.ItemsSource = films;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при загрузке фильмов: {ex.Message}", 
+                              "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-            var searchText = SearchTextBox.Text.ToLower();
-            var selectedDate = DateFilter.SelectedDate;
-
-            var query = Core.GetContext().Films.AsQueryable();
-
-            if (!string.IsNullOrWhiteSpace(searchText))
+            try
             {
-                query = query.Where(f => f.Title.ToLower().Contains(searchText));
-            }
+                var searchText = SearchTextBox.Text.ToLower();
+                var selectedDate = DateFilter.SelectedDate;
 
-            if (selectedDate.HasValue)
+                var query = Core.GetContext().Films.AsQueryable();
+
+                if (!string.IsNullOrWhiteSpace(searchText))
+                {
+                    query = query.Where(f => f.Title.ToLower().Contains(searchText));
+                }
+
+                if (selectedDate.HasValue)
+                {
+                    // Ищем фильмы, у которых есть сеансы на выбранную дату
+                    query = query.Where(f => f.Sessions.Any(s => s.StartDateTime.Value == selectedDate.Value.Date));
+                }
+
+                FilmsDataGrid.ItemsSource = query.ToList();
+            }
+            catch (Exception ex)
             {
-                // TODO: Добавить фильтрацию по дате сеансов
+                MessageBox.Show($"Ошибка при поиске фильмов: {ex.Message}", 
+                              "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-
-            FilmsDataGrid.ItemsSource = query.ToList();
         }
 
         private void FilmsDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var selectedFilm = FilmsDataGrid.SelectedItem as Films;
-            if (selectedFilm != null)
-            {
-                // TODO: Открыть детальную информацию о фильме
-            }
+            // Пока оставим пустым, здесь будет открытие детальной информации о фильме
         }
     }
 } 

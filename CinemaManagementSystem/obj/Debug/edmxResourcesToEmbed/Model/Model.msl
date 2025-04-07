@@ -106,6 +106,7 @@
           <ScalarProperty Name="SessionId" ColumnName="SessionId" />
           <ScalarProperty Name="Price" ColumnName="Price" />
           <ScalarProperty Name="SeatId" ColumnName="SeatId" />
+          <ScalarProperty Name="SaleDateTime" ColumnName="SaleDateTime" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

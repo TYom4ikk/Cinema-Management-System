@@ -1,0 +1,75 @@
+<Page x:Class="CinemaManagementSystem.View.SalesStatisticsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CinemaManagementSystem.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Статистика продаж">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Фильтры -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBlock Text="Период:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <DatePicker x:Name="StartDatePicker" Width="120" Margin="0,0,10,0"/>
+            <TextBlock Text="-" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <DatePicker x:Name="EndDatePicker" Width="120" Margin="0,0,10,0"/>
+            <Button x:Name="ApplyFilterButton" Content="Применить" 
+                    Click="ApplyFilterButton_Click" Width="100"/>
+        </StackPanel>
+
+        <!-- Статистика -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Общая статистика -->
+            <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                <TextBlock Text="Общая статистика" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Всего продано билетов:" Grid.Row="0" Grid.Column="0" Margin="0,0,5,5"/>
+                    <TextBlock x:Name="TotalTicketsBlock" Grid.Row="0" Grid.Column="1" Margin="0,0,0,5"/>
+
+                    <TextBlock Text="Общая выручка:" Grid.Row="1" Grid.Column="0" Margin="0,0,5,5"/>
+                    <TextBlock x:Name="TotalRevenueBlock" Grid.Row="1" Grid.Column="1" Margin="0,0,0,5"/>
+
+                    <TextBlock Text="Средняя цена билета:" Grid.Row="2" Grid.Column="0" Margin="0,0,5,0"/>
+                    <TextBlock x:Name="AveragePriceBlock" Grid.Row="2" Grid.Column="1"/>
+                </Grid>
+            </StackPanel>
+
+            <!-- Статистика по фильмам -->
+            <StackPanel Grid.Column="1">
+                <TextBlock Text="Статистика по фильмам" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <ListView x:Name="FilmsStatisticsListView">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Фильм" DisplayMemberBinding="{Binding FilmTitle}" Width="200"/>
+                            <GridViewColumn Header="Продано билетов" DisplayMemberBinding="{Binding TicketsSold}" Width="100"/>
+                            <GridViewColumn Header="Выручка" DisplayMemberBinding="{Binding Revenue}" Width="100"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page> 
+ 

@@ -128,6 +128,7 @@
     <Property Name="SessionId" Type="bigint" Nullable="false" />
     <Property Name="Price" Type="int" Nullable="false" />
     <Property Name="SeatId" Type="int" Nullable="false" />
+    <Property Name="SaleDateTime" Type="datetime" Nullable="false" />
   </EntityType>
   <EntityType Name="Workers">
     <Key>

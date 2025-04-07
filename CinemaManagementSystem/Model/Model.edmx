@@ -133,6 +133,7 @@
           <Property Name="SessionId" Type="bigint" Nullable="false" />
           <Property Name="Price" Type="int" Nullable="false" />
           <Property Name="SeatId" Type="int" Nullable="false" />
+          <Property Name="SaleDateTime" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="Workers">
           <Key>
@@ -517,6 +518,7 @@ FROM [dbo].[FilmProducingCompanies] AS [FilmProducingCompanies]</DefiningQuery>
           <Property Name="SessionId" Type="Int64" Nullable="false" />
           <Property Name="Price" Type="Int32" Nullable="false" />
           <Property Name="SeatId" Type="Int32" Nullable="false" />
+          <Property Name="SaleDateTime" Type="DateTime" Nullable="false" Precision="3" />
           <NavigationProperty Name="Seats" Relationship="Self.FK_Tickets_Seats" FromRole="Tickets" ToRole="Seats" />
           <NavigationProperty Name="Sessions" Relationship="Self.FK_Tickets_Sessions" FromRole="Tickets" ToRole="Sessions" />
         </EntityType>
@@ -837,6 +839,7 @@ FROM [dbo].[FilmProducingCompanies] AS [FilmProducingCompanies]</DefiningQuery>
                 <ScalarProperty Name="SessionId" ColumnName="SessionId" />
                 <ScalarProperty Name="Price" ColumnName="Price" />
                 <ScalarProperty Name="SeatId" ColumnName="SeatId" />
+                <ScalarProperty Name="SaleDateTime" ColumnName="SaleDateTime" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
