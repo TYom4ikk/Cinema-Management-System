@@ -69,7 +69,7 @@ namespace CinemaManagementSystem
 
         private void BookingMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Функционал в разработке", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
+            MainFrame.Navigate(new SchedulePage(true));
         }
 
         private void DailyReportMenuItem_Click(object sender, RoutedEventArgs e)

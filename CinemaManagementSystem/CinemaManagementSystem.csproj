@@ -98,6 +98,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\BookTicketPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -186,6 +190,9 @@
     </Compile>
     <Compile Include="View\SalesStatisticsPage.xaml.cs">
       <DependentUpon>SalesStatisticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\BookTicketPage.xaml.cs">
+      <DependentUpon>BookTicketPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -3,14 +3,18 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using CinemaManagementSystem.Model;
+using CinemaManagementSystem.View;
 
 namespace CinemaManagementSystem.View
 {
     public partial class SchedulePage : Page
     {
-        public SchedulePage()
+        private readonly bool _isBookingMode;
+
+        public SchedulePage(bool isBookingMode = false)
         {
             InitializeComponent();
+            _isBookingMode = isBookingMode;
             DateFilter.SelectedDate = DateTime.Today;
             LoadSessions();
         }
@@ -48,13 +52,14 @@ namespace CinemaManagementSystem.View
             LoadSessions(DateFilter.SelectedDate);
         }
 
-        private void SellTicketButton_Click(object sender, RoutedEventArgs e)
+        private void SessionsDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var session = (sender as Button)?.DataContext as Sessions;
-            if (session != null)
+            if (SessionsDataGrid.SelectedItem is Sessions selectedSession)
             {
-                // Переходим на страницу продажи билетов для выбранного сеанса
-                NavigationService?.Navigate(new SellTicketPage(session));
+                if (_isBookingMode)
+                    NavigationService.Navigate(new BookTicketPage(selectedSession));
+                else
+                    NavigationService.Navigate(new SellTicketPage(selectedSession));
             }
         }
     }

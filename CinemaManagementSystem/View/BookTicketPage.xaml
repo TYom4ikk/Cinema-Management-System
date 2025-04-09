@@ -1,0 +1,115 @@
+<Page x:Class="CinemaManagementSystem.View.BookTicketPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Бронирование билетов">
+    
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Информация о сеансе -->
+        <TextBlock x:Name="FilmTitleBlock" 
+                   Grid.Row="0"
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   Margin="0,0,0,20"/>
+        
+        <TextBlock x:Name="SessionInfoBlock" 
+                   Grid.Row="1"
+                   FontSize="16" 
+                   Margin="0,0,0,20"/>
+
+        <!-- Выбор места -->
+        <StackPanel Grid.Row="2" Margin="0,0,0,20">
+            <TextBlock Text="Выберите место:" 
+                       FontSize="16" 
+                       Margin="0,0,0,10"/>
+            
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <StackPanel Margin="0,0,20,0">
+                    <TextBlock Text="Ряд:" Margin="0,0,0,5"/>
+                    <ComboBox x:Name="RowComboBox" 
+                             Width="100"
+                             SelectionChanged="RowComboBox_SelectionChanged"/>
+                </StackPanel>
+                
+                <StackPanel>
+                    <TextBlock Text="Место:" Margin="0,0,0,5"/>
+                    <ComboBox x:Name="SeatComboBox" 
+                             Width="100"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Контактная информация -->
+        <StackPanel Grid.Row="3" Margin="0,0,0,20">
+            <TextBlock Text="Контактная информация:" 
+                       FontSize="16" 
+                       Margin="0,0,0,10"/>
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="ФИО:" 
+                           Grid.Row="0" Grid.Column="0"
+                           Margin="0,0,10,5"/>
+                <TextBox x:Name="NameTextBox" 
+                         Grid.Row="0" Grid.Column="1"
+                         Margin="0,0,0,5"/>
+
+                <TextBlock Text="Телефон:" 
+                           Grid.Row="1" Grid.Column="0"
+                           Margin="0,0,10,5"/>
+                <TextBox x:Name="PhoneTextBox" 
+                         Grid.Row="1" Grid.Column="1"
+                         Margin="0,0,0,5"/>
+
+                <TextBlock Text="Email:" 
+                           Grid.Row="2" Grid.Column="0"
+                           Margin="0,0,10,5"/>
+                <TextBox x:Name="EmailTextBox" 
+                         Grid.Row="2" Grid.Column="1"/>
+            </Grid>
+        </StackPanel>
+
+        <!-- Цена -->
+        <StackPanel Grid.Row="4" Margin="0,0,0,20">
+            <TextBlock Text="Цена билета:" 
+                       FontSize="16" 
+                       Margin="0,0,0,5"/>
+            <TextBox x:Name="PriceTextBox" 
+                     Width="150" 
+                     HorizontalAlignment="Left"/>
+        </StackPanel>
+
+        <!-- Кнопки -->
+        <StackPanel Grid.Row="5" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Right">
+            <Button Content="Забронировать" 
+                    Click="BookButton_Click"
+                    Width="150" 
+                    Height="30" 
+                    Margin="0,0,10,0"/>
+            <Button Content="Отмена" 
+                    Click="CancelButton_Click"
+                    Width="100" 
+                    Height="30"/>
+        </StackPanel>
+    </Grid>
+</Page> 
+ 
