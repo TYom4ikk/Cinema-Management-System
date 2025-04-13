@@ -18,7 +18,6 @@ namespace CinemaManagementSystem.View
 
         private void LoadDefaultDates()
         {
-            // Устанавливаем период за последний месяц
             EndDatePicker.SelectedDate = DateTime.Today;
             StartDatePicker.SelectedDate = DateTime.Today.AddMonths(-1);
         }
@@ -32,12 +31,10 @@ namespace CinemaManagementSystem.View
 
                 var context = Core.GetContext();
 
-                // Получаем все билеты за выбранный период
                 List<Tickets>tickets = context.Tickets
                     .Where(t => t.SaleDateTime >= startDate && t.SaleDateTime <= endDate)
                     .ToList();
 
-                // Общая статистика
                 var totalTickets = tickets.Count();
                 var totalRevenue = tickets.Sum(t => t.Price);
                 var averagePrice = totalTickets > 0 ? totalRevenue / totalTickets : 0;
@@ -46,7 +43,6 @@ namespace CinemaManagementSystem.View
                 TotalRevenueBlock.Text = $"{totalRevenue} руб.";
                 AveragePriceBlock.Text = $"{averagePrice} руб.";
 
-                // Статистика по фильмам
                 var filmsStats = tickets
                     .GroupBy(t => t.Sessions.Films.Title)
                     .Select(g => new

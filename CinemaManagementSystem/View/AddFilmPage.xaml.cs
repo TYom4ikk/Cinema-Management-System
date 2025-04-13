@@ -34,13 +34,10 @@ namespace CinemaManagementSystem.View
         {
             try
             {
-                // Загружаем жанры
                 GenreComboBox.ItemsSource = Core.GetContext().Genres.ToList();
 
-                // Загружаем страны
                 CountryComboBox.ItemsSource = Core.GetContext().Countries.ToList();
 
-                // Заполняем возрастные ограничения
                 AgeRestrictionComboBox.ItemsSource = new[] { 0, 6, 12, 16, 18 };
             }
             catch (Exception ex)
@@ -54,7 +51,6 @@ namespace CinemaManagementSystem.View
         {
             try
             {
-                // Проверяем обязательные поля
                 if (string.IsNullOrWhiteSpace(_currentFilm.Title))
                 {
                     MessageBox.Show("Введите название фильма!", "Ошибка", 
@@ -69,10 +65,8 @@ namespace CinemaManagementSystem.View
                     return;
                 }
 
-                // Сохраняем выбранные значения
                 _currentFilm.AgeRestriction = (byte)(AgeRestrictionComboBox.SelectedItem ?? 0);
 
-                // Добавляем фильм в базу данных
                 if (_currentFilm.Id == 0)
                     Core.GetContext().Films.Add(_currentFilm);
 

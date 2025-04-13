@@ -62,3 +62,5 @@ C:\Users\Admin\Desktop\Cinema-Management-System\CinemaManagementSystem\obj\Debug
 C:\Users\Admin\Desktop\Cinema-Management-System\CinemaManagementSystem\obj\Debug\View\SellTicketPage.g.cs
 C:\Users\Admin\Desktop\Cinema-Management-System\CinemaManagementSystem\obj\Debug\View\SalesStatisticsPage.g.cs
 C:\Users\Admin\Desktop\Cinema-Management-System\CinemaManagementSystem\obj\Debug\View\SalesStatisticsPage.baml
+C:\Users\Admin\Desktop\Cinema-Management-System\CinemaManagementSystem\obj\Debug\View\BookTicketPage.baml
+C:\Users\Admin\Desktop\Cinema-Management-System\CinemaManagementSystem\obj\Debug\View\BookTicketPage.g.cs

@@ -29,8 +29,6 @@ namespace CinemaManagementSystem.View
                 {
                     query = query.Where(s => s.StartDateTime == date.Value.Date);
                 }
-
-                // Сортируем по дате и времени начала
                 var sessions = query.OrderBy(s => s.StartDateTime).ToList();
                 SessionsDataGrid.ItemsSource = sessions;
             }
@@ -56,11 +54,16 @@ namespace CinemaManagementSystem.View
         {
             if (SessionsDataGrid.SelectedItem is Sessions selectedSession)
             {
-                if (_isBookingMode)
-                    NavigationService.Navigate(new BookTicketPage(selectedSession));
-                else
+               /* if (_isBookingMode)
+                    NavigationService.Navigate(new BookTicketPage(selectedSession));*/
+               
                     NavigationService.Navigate(new SellTicketPage(selectedSession));
             }
+        }
+
+        private void SellTicketButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 } 

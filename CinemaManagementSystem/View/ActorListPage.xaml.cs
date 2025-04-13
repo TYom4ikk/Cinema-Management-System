@@ -60,8 +60,6 @@ namespace CinemaManagementSystem.View
         {
             if (ActorsDataGrid.SelectedItem is Actors selectedActor)
             {
-                // Здесь можно добавить логику для редактирования актера
-                // Например, открыть страницу редактирования
             }
         }
     }

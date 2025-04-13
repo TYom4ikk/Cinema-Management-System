@@ -22,7 +22,6 @@ namespace CinemaManagementSystem.View
             {
                 try
                 {
-                    // Создаем нового актера
                     var newActor = new Actors
                     {
                         FirstName = _actor.FirstName,
@@ -31,7 +30,6 @@ namespace CinemaManagementSystem.View
                         BirthDate = _actor.BirthDate
                     };
 
-                    // Сохраняем в базу данных
                     Core.GetContext().Actors.Add(newActor);
                     Core.GetContext().SaveChanges();
 
@@ -45,6 +43,10 @@ namespace CinemaManagementSystem.View
             }
         }
 
+        /// <summary>
+        /// Валидация входных данных
+        /// </summary>
+        /// <returns>Прошла ли ивалидация</returns>
         private bool ValidateInput()
         {
             if (string.IsNullOrWhiteSpace(_actor.FirstName))

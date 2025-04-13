@@ -44,7 +44,7 @@ namespace CinemaManagementSystem.View
 
                 if (selectedDate.HasValue)
                 {
-                    // Ищем фильмы, у которых есть сеансы на выбранную дату
+                    // Фильмы, у которых есть сеансы на выбранную дату
                     query = query.Where(f => f.Sessions.Any(s => s.StartDateTime.Value == selectedDate.Value.Date));
                 }
 
@@ -59,7 +59,7 @@ namespace CinemaManagementSystem.View
 
         private void FilmsDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            // Пока оставим пустым, здесь будет открытие детальной информации о фильме
+            // Открытие детальной информации о фильме
         }
     }
 } 

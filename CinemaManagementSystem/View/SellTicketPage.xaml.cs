@@ -28,10 +28,8 @@ namespace CinemaManagementSystem.View
         {
             try
             {
-                // Получаем все места в зале
                 var seats = Core.GetContext().Seats.ToList();
 
-                // Получаем уникальные номера рядов
                 var rows = seats.Select(s => s.RowNumber).Distinct().OrderBy(r => r).ToList();
                 RowComboBox.ItemsSource = rows;
 
@@ -84,7 +82,7 @@ namespace CinemaManagementSystem.View
                 var selectedRow = (short)RowComboBox.SelectedItem;
                 var selectedSeat = (int)SeatComboBox.SelectedItem;
 
-                // Находим выбранное место
+                // Выьранное место
                 var seat = Core.GetContext().Seats.FirstOrDefault(s => 
                     s.RowNumber == selectedRow && s.SeatNumber == selectedSeat);
 
@@ -95,19 +93,16 @@ namespace CinemaManagementSystem.View
                     return;
                 }
 
-                // Создаем новый билет
+
                 var ticket = new Tickets
                 {
                     Id = _currentSession.Id,
                     SeatId= seat.Id,
                     Price = price,
-//                    SaleDateTime = DateTime.Now
                 };
 
-                // Помечаем место как занятое
                 seat.IsOccupied = true;
 
-                // Сохраняем изменения
                 Core.GetContext().Tickets.Add(ticket);
                 Core.GetContext().SaveChanges();
 

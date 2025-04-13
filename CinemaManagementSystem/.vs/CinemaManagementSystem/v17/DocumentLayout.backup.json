@@ -3,40 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\view\\schedulepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|c:\\users\\admin\\desktop\\cinema-management-system\\cinemamanagementsystem\\view\\schedulepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\schedulepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|c:\\users\\admin\\desktop\\cinema-management-system\\cinemamanagementsystem\\view\\schedulepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\view\\schedulepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\schedulepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|c:\\users\\admin\\desktop\\cinema-management-system\\cinemamanagementsystem\\view\\converters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\converters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|c:\\users\\admin\\desktop\\cinema-management-system\\cinemamanagementsystem\\view\\bookticketpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\bookticketpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|c:\\users\\admin\\desktop\\cinema-management-system\\cinemamanagementsystem\\view\\filmslistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\filmslistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|c:\\users\\admin\\desktop\\cinema-management-system\\cinemamanagementsystem\\view\\bookticketpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\bookticketpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\view\\filmslistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\filmslistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|c:\\users\\admin\\desktop\\cinema-management-system\\cinemamanagementsystem\\view\\addsessionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\addsessionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\view\\salesstatisticspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\salesstatisticspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\view\\addfilmpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\addfilmpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\model\\model.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:model\\model.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|c:\\users\\admin\\desktop\\cinema-management-system\\cinemamanagementsystem\\view\\addactorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\addactorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\view\\actorlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\actorlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|c:\\users\\admin\\desktop\\cinema-management-system\\cinemamanagementsystem\\view\\addactorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\addactorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\view\\actorlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\actorlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\view\\actorlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\actorlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\view\\filmslistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\filmslistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\view\\salesstatisticspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\salesstatisticspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\view\\filmslistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\filmslistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\model\\model.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:model\\model.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\model\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:model\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\view\\addfilmpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AD728A5-301B-427F-8913-ADAD1AA28060}|CinemaManagementSystem.csproj|solutionrelative:view\\addfilmpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,8 +82,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 293,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddActorPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddActorPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\AddActorPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddActorPage.xaml.cs",
+              "RelativeToolTip": "View\\AddActorPage.xaml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCgAAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T18:19:05.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddActorPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddActorPage.xaml",
+              "RelativeDocumentMoniker": "View\\AddActorPage.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddActorPage.xaml",
+              "RelativeToolTip": "View\\AddActorPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-13T18:18:58.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookTicketPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\BookTicketPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\BookTicketPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\BookTicketPage.xaml.cs",
+              "RelativeToolTip": "View\\BookTicketPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T18:12:26.379Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -82,32 +136,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Converters.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\Converters.cs",
-              "RelativeDocumentMoniker": "View\\Converters.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\Converters.cs",
-              "RelativeToolTip": "View\\Converters.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T19:26:08.784Z",
+              "DocumentIndex": 9,
+              "Title": "ActorListPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\ActorListPage.xaml",
+              "RelativeDocumentMoniker": "View\\ActorListPage.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\ActorListPage.xaml",
+              "RelativeToolTip": "View\\ActorListPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-06T09:17:14.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SalesStatisticsPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\SalesStatisticsPage.xaml.cs",
-              "RelativeDocumentMoniker": "View\\SalesStatisticsPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\SalesStatisticsPage.xaml.cs",
-              "RelativeToolTip": "View\\SalesStatisticsPage.xaml.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAowFEAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "SchedulePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\SchedulePage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\SchedulePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\SchedulePage.xaml.cs",
+              "RelativeToolTip": "View\\SchedulePage.xaml.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAWwDIAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T09:17:32.437Z"
+              "WhenOpened": "2025-04-05T22:08:44.368Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "AddSessionPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddSessionPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\AddSessionPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddSessionPage.xaml.cs",
+              "RelativeToolTip": "View\\AddSessionPage.xaml.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAwwFsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T18:19:17.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookTicketPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\BookTicketPage.xaml",
+              "RelativeDocumentMoniker": "View\\BookTicketPage.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\BookTicketPage.xaml",
+              "RelativeToolTip": "View\\BookTicketPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-13T18:20:13.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "FilmsListPage.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\FilmsListPage.xaml",
               "RelativeDocumentMoniker": "View\\FilmsListPage.xaml",
@@ -119,41 +198,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ActorListPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\ActorListPage.xaml",
-              "RelativeDocumentMoniker": "View\\ActorListPage.xaml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\ActorListPage.xaml",
-              "RelativeToolTip": "View\\ActorListPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-06T09:17:14.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAqwGkAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T21:16:45.665Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "SellTicketPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\SellTicketPage.xaml",
-              "RelativeDocumentMoniker": "View\\SellTicketPage.xaml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\SellTicketPage.xaml",
-              "RelativeToolTip": "View\\SellTicketPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-05T22:10:33.258Z"
+              "Title": "SalesStatisticsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\SalesStatisticsPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\SalesStatisticsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\SalesStatisticsPage.xaml.cs",
+              "RelativeToolTip": "View\\SalesStatisticsPage.xaml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T09:17:32.437Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "SellTicketPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\SellTicketPage.xaml.cs",
               "RelativeDocumentMoniker": "View\\SellTicketPage.xaml.cs",
@@ -165,20 +223,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SchedulePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\SchedulePage.xaml.cs",
-              "RelativeDocumentMoniker": "View\\SchedulePage.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\SchedulePage.xaml.cs",
-              "RelativeToolTip": "View\\SchedulePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "AddFilmPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddFilmPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\AddFilmPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddFilmPage.xaml.cs",
+              "RelativeToolTip": "View\\AddFilmPage.xaml.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T22:08:44.368Z",
+              "WhenOpened": "2025-04-05T10:47:30.196Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
+              "Title": "SellTicketPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\SellTicketPage.xaml",
+              "RelativeDocumentMoniker": "View\\SellTicketPage.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\SellTicketPage.xaml",
+              "RelativeToolTip": "View\\SellTicketPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-05T22:10:33.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ActorListPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\ActorListPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\ActorListPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\ActorListPage.xaml.cs",
+              "RelativeToolTip": "View\\ActorListPage.xaml.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAqwD0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T09:17:26.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAqwGkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T21:16:45.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Core.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\Model\\Core.cs",
               "RelativeDocumentMoniker": "Model\\Core.cs",
@@ -190,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "FilmsListPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\FilmsListPage.xaml.cs",
               "RelativeDocumentMoniker": "View\\FilmsListPage.xaml.cs",
@@ -202,19 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ActorListPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\ActorListPage.xaml.cs",
-              "RelativeDocumentMoniker": "View\\ActorListPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\ActorListPage.xaml.cs",
-              "RelativeToolTip": "View\\ActorListPage.xaml.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAqwA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T09:17:26.157Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Model.edmx [Diagram1]",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\Model\\Model.edmx",
               "RelativeDocumentMoniker": "Model\\Model.edmx",
@@ -222,18 +304,6 @@
               "RelativeToolTip": "Model\\Model.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
               "WhenOpened": "2025-04-06T09:23:24.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AddFilmPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddFilmPage.xaml.cs",
-              "RelativeDocumentMoniker": "View\\AddFilmPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cinema-Management-System\\CinemaManagementSystem\\View\\AddFilmPage.xaml.cs",
-              "RelativeToolTip": "View\\AddFilmPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T10:47:30.196Z"
             }
           ]
         }

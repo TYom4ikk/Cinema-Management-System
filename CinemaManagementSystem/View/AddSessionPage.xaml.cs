@@ -32,7 +32,6 @@ namespace CinemaManagementSystem.View
         {
             try
             {
-                // Проверяем обязательные поля
                 if (FilmComboBox.SelectedItem == null)
                 {
                     MessageBox.Show("Выберите фильм!", "Ошибка", 
@@ -72,7 +71,6 @@ namespace CinemaManagementSystem.View
                 var sessionDate = DatePicker.SelectedDate.Value;
                 var startDateTime = sessionDate.Add(startTime);
 
-                // Создаем новый сеанс
                 var session = new Sessions
                 {
                     FilmId = selectedFilm.Id,
@@ -80,7 +78,6 @@ namespace CinemaManagementSystem.View
                     EndDateTime = startDateTime.AddMinutes(selectedFilm.Duration)
                 };
 
-                // Добавляем сеанс в базу данных
                 Core.GetContext().Sessions.Add(session);
                 Core.GetContext().SaveChanges();
 
