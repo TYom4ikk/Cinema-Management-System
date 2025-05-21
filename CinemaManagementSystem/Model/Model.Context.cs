@@ -13,10 +13,10 @@ namespace CinemaManagementSystem.Model
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CinemaEntities : DbContext
+    public partial class Cinema_DBEntities : DbContext
     {
-        public CinemaEntities()
-            : base("name=CinemaEntities")
+        public Cinema_DBEntities()
+            : base("name=Cinema_DBEntities")
         {
         }
     
@@ -26,7 +26,10 @@ namespace CinemaManagementSystem.Model
         }
     
         public DbSet<Actors> Actors { get; set; }
+        public DbSet<Bookings> Bookings { get; set; }
         public DbSet<Countries> Countries { get; set; }
+        public DbSet<FilmActors> FilmActors { get; set; }
+        public DbSet<FilmGenres> FilmGenres { get; set; }
         public DbSet<Films> Films { get; set; }
         public DbSet<Genres> Genres { get; set; }
         public DbSet<Halls> Halls { get; set; }
@@ -37,6 +40,5 @@ namespace CinemaManagementSystem.Model
         public DbSet<sysdiagrams> sysdiagrams { get; set; }
         public DbSet<Tickets> Tickets { get; set; }
         public DbSet<Workers> Workers { get; set; }
-        public DbSet<FilmActors> FilmActors { get; set; }
     }
 }

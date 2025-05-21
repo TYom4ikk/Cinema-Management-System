@@ -5,39 +5,67 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CinemaManagementSystem"
         mc:Ignorable="d"
-        Title="Система управления кинотеатром" Height="600" Width="1000"
+        Title="Система управления кинотеатром" Height="800" Width="1000"
         WindowStartupLocation="CenterScreen">
-    <Grid>
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Assets/Colors/MainColors.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid Background="{StaticResource BackgroundColor}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <!-- Верхняя панель с меню -->
-        <Menu Grid.Row="0">
-            <MenuItem Header="Файл">
-                <MenuItem Header="Выход" Click="ExitMenuItem_Click"/>
-            </MenuItem>
+        <Menu x:Name="MainMenu" Grid.Row="0" Background="{StaticResource SurfaceColor}" Foreground="{StaticResource PrimaryTextColor}"
+              FontWeight="Bold" FontSize="14">
+            
+            <MenuItem Header="Выход" Click="ExitMenuItem_Click"/>
+            
             <MenuItem Header="Фильмы">
-                <MenuItem Header="Список фильмов" Click="FilmsListMenuItem_Click"/>
-                <MenuItem Header="Добавить фильм" Click="AddFilmMenuItem_Click"/>
+                <MenuItem Header="Список фильмов" Click="FilmsListMenuItem_Click" Background="{StaticResource SurfaceColor}" Foreground="{StaticResource PrimaryTextColor}"
+              FontWeight="Bold" FontSize="14"/>
+                
+                <MenuItem x:Name="AddFilmMenuItem" Header="Добавить фильм" Click="AddFilmMenuItem_Click" Background="{StaticResource SurfaceColor}" Foreground="{StaticResource PrimaryTextColor}"
+              FontWeight="Bold" FontSize="14"/>
+                
+                <MenuItem x:Name="EditFilmMenuItem" Header="Редактировать фильм" Click="EditFilmMenuItem_Click" Background="{StaticResource SurfaceColor}" Foreground="{StaticResource PrimaryTextColor}"
+              FontWeight="Bold" FontSize="14"/>
             </MenuItem>
+            
             <MenuItem Header="Актеры">
-                <MenuItem Header="Список актеров" Click="ActorListMenuItem_Click"/>
-                <MenuItem Header="Добавить актера" Click="AddActorMenuItem_Click"/>
+                <MenuItem Header="Список актеров" Click="ActorListMenuItem_Click" Background="{StaticResource SurfaceColor}" Foreground="{StaticResource PrimaryTextColor}"
+              FontWeight="Bold" FontSize="14"/>
+                <MenuItem x:Name="AddActorMenuItem" Header="Добавить актера" Click="AddActorMenuItem_Click" Background="{StaticResource SurfaceColor}" Foreground="{StaticResource PrimaryTextColor}"
+              FontWeight="Bold" FontSize="14"/>
             </MenuItem>
             <MenuItem Header="Сеансы">
-                <MenuItem Header="Расписание" Click="ScheduleMenuItem_Click"/>
-                <MenuItem Header="Добавить сеанс" Click="AddSessionMenuItem_Click"/>
-            </MenuItem>
-            <MenuItem Header="Билеты">
-                <MenuItem Header="Продажа билетов" Click="SellTicketsMenuItem_Click"/>
-                <MenuItem Header="Бронирование" Click="BookingMenuItem_Click"/>
+                <MenuItem Header="Расписание" Click="ScheduleMenuItem_Click" Background="{StaticResource SurfaceColor}" Foreground="{StaticResource PrimaryTextColor}"
+              FontWeight="Bold" FontSize="14"/>
+                <!--<MenuItem x:Name="AddSessionMenuItem" Header="Добавить сеанс" Click="AddSessionMenuItem_Click"/>-->
             </MenuItem>
             <MenuItem Header="Отчеты">
-                <MenuItem Header="Ежедневный отчет" Click="DailyReportMenuItem_Click"/>
-                <MenuItem Header="Статистика продаж" Click="StatisticsMenuItem_Click"/>
+                <MenuItem Header="Ежедневный отчет" Click="DailyReportMenuItem_Click" Background="{StaticResource SurfaceColor}" Foreground="{StaticResource PrimaryTextColor}"
+              FontWeight="Bold" FontSize="14"/>
+                <MenuItem Header="Статистика продаж" Click="StatisticsMenuItem_Click" Background="{StaticResource SurfaceColor}" Foreground="{StaticResource PrimaryTextColor}"
+              FontWeight="Bold" FontSize="14"/>
             </MenuItem>
+            <MenuItem Header="Сотрудники">
+                <MenuItem Header="Список сотрудников" Click="StaffListMenuItem_Click" Background="{StaticResource SurfaceColor}" Foreground="{StaticResource PrimaryTextColor}"
+              FontWeight="Bold" FontSize="14"/>
+                <MenuItem Header="Добавить сотрудника" Click="AddStaffMenuItem_Click" Background="{StaticResource SurfaceColor}" Foreground="{StaticResource PrimaryTextColor}"
+              FontWeight="Bold" FontSize="14"/>
+                <MenuItem Header="Редактировать сотрудника" Click="EditStaffMenuItem_Click" Background="{StaticResource SurfaceColor}" Foreground="{StaticResource PrimaryTextColor}"
+              FontWeight="Bold" FontSize="14"/>
+            </MenuItem>
+            <MenuItem x:Name="SignInAndSignOut" Header="Войти как администратор" Click="SignIn_Click" Background="{StaticResource SurfaceColor}" Foreground="{StaticResource PrimaryTextColor}"
+              FontWeight="Bold" FontSize="14"/>
         </Menu>
 
         <!-- Основная область контента -->

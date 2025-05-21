@@ -40,12 +40,21 @@
         </StackPanel>
 
         <StackPanel Grid.Row="4" Margin="0,0,0,10">
-            <TextBlock Text="Цена билета:" Margin="0,0,0,5"/>
-            <TextBox x:Name="PriceTextBox" 
-                     Padding="5"/>
+            <TextBlock Text="Время окончания:" Margin="0,0,0,5"/>
+            <TextBox x:Name="EndTimeTextBox" 
+              Padding="5"/>
+            <TextBlock Text="Формат: ЧЧ:ММ" 
+                Foreground="Gray" 
+                FontSize="12"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="5" 
+        <StackPanel Grid.Row="5" Margin="0,0,0,10">
+            <TextBlock Text="Цена билета:" Margin="0,0,0,5"/>
+            <TextBox x:Name="PriceTextBox" Padding="5" PreviewTextInput="PriceTextBox_PreviewTextInput" />
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="7" 
                     Orientation="Horizontal" 
                     HorizontalAlignment="Right" 
                     VerticalAlignment="Bottom">

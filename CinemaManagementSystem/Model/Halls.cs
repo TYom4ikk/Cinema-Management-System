@@ -17,6 +17,7 @@ namespace CinemaManagementSystem.Model
         public Halls()
         {
             this.Seats = new HashSet<Seats>();
+            this.Sessions = new HashSet<Sessions>();
         }
     
         public short Id { get; set; }
@@ -25,5 +26,6 @@ namespace CinemaManagementSystem.Model
         public int SeatsCount { get; set; }
     
         public virtual ICollection<Seats> Seats { get; set; }
+        public virtual ICollection<Sessions> Sessions { get; set; }
     }
 }

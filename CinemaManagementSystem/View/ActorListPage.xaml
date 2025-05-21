@@ -2,17 +2,27 @@
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       Title="Список актеров" Height="600" Width="800">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Assets/Colors/MainColors.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <TextBlock Text="Список актеров" 
                    FontSize="24" 
                    FontWeight="Bold" 
-                   Margin="0,0,0,20"/>
+                   Margin="0,0,0,20" Foreground="{StaticResource PrimaryTextColor}"/>
 
         <StackPanel Grid.Row="1" 
                     Orientation="Horizontal" 
@@ -22,15 +32,17 @@
                      Height="30" 
                      Margin="0,0,10,0"
                      ToolTip="Поиск по имени или фамилии..."/>
+            <ComboBox x:Name="CountryFilter" 
+                      Width="200" 
+                      Height="30" 
+                      Margin="0,0,10,0"
+                      SelectionChanged="CountryFilter_SelectionChanged"
+                      DisplayMemberPath="Name"/>
             <Button Content="Поиск" 
                     Click="SearchButton_Click"
                     Width="100" 
                     Height="30" 
                     Margin="0,0,10,0"/>
-            <Button Content="Добавить актера" 
-                    Click="AddActorButton_Click"
-                    Width="150" 
-                    Height="30"/>
         </StackPanel>
 
         <DataGrid Grid.Row="2" 
@@ -44,7 +56,10 @@
                 <DataGridTextColumn Header="Фамилия" Binding="{Binding LastName}" Width="150"/>
                 <DataGridTextColumn Header="Отчество" Binding="{Binding MiddleName}" Width="150"/>
                 <DataGridTextColumn Header="Дата рождения" Binding="{Binding BirthDate, StringFormat=dd.MM.yyyy}" Width="120"/>
+                <DataGridTextColumn Header="Страна" Binding="{Binding Countries.Name}" Width="150"/>
             </DataGrid.Columns>
         </DataGrid>
+
+      
     </Grid>
 </Page> 

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Admin\Desktop\Cinema-Management-System\CinemaManagementSystem\App.xaml
-9-929356047
+21319233470
 2-95638413
-31-2064507189
-1812805266
-MainWindow.xaml;View\ActorListPage.xaml;View\AddActorPage.xaml;View\AddFilmPage.xaml;View\AddSessionPage.xaml;View\SchedulePage.xaml;View\SellTicketPage.xaml;View\FilmsListPage.xaml;View\SalesStatisticsPage.xaml;
+61-1721632551
+20-1564399764
+Assets\Styles\AddActorPageStyle.xaml;Assets\Styles\EditActorPageStyle.xaml;Assets\Styles\FullFilmInfoWindowStyles.xaml;Assets\Styles\SalesStatisticsPageStyle.xaml;Assets\Styles\StaffPagesStyle.xaml;MainWindow.xaml;View\ActorListPage.xaml;View\AddActorPage.xaml;View\AddFilmPage.xaml;View\AddSessionPage.xaml;View\DailyReportPage.xaml;View\EditFilmPage.xaml;View\EditStaffPage.xaml;View\RegistrationPage.xaml;View\SchedulePage.xaml;View\BuyTicketPage.xaml;View\FilmsListPage.xaml;View\SalesStatisticsPage.xaml;View\StaffListPage.xaml;View\AddStaffPage.xaml;View\Windows\FullFilmInfoWindow.xaml;
 
 False
 

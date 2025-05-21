@@ -16,13 +16,13 @@ namespace CinemaManagementSystem.Model
     {
         public Genres()
         {
-            this.Films = new HashSet<Films>();
+            this.FilmGenres = new HashSet<FilmGenres>();
         }
     
         public byte Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
     
-        public virtual ICollection<Films> Films { get; set; }
+        public virtual ICollection<FilmGenres> FilmGenres { get; set; }
     }
 }

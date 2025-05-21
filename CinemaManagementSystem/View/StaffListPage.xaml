@@ -1,0 +1,61 @@
+<Page x:Class="CinemaManagementSystem.View.StaffListPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Сотрудники" Height="600" Width="950">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Assets/Styles/StaffPagesStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Список сотрудников" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   Margin="0,0,0,20"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBox x:Name="SearchTextBox" 
+                     Width="200" 
+                     Margin="0,0,10,0"
+                     ToolTip="Поиск по ФИО или должности..."/>
+            <Button Content="Найти" 
+                    Width="100" 
+                    Click="SearchButton_Click"/>
+        </StackPanel>
+
+        <DataGrid x:Name="StaffDataGrid" 
+                  Grid.Row="2"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  CanUserResizeRows="False"
+                  SelectionMode="Single"
+                  SelectionUnit="FullRow">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding LastName}" Width="*"/>
+                <DataGridTextColumn Header="Имя" Binding="{Binding FirstName}" Width="*"/>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding MiddleName}" Width="*"/>
+                <DataGridTextColumn Header="Должность" Binding="{Binding Posts.Name}" Width="*"/>
+                <DataGridTextColumn Header="Телефон" Binding="{Binding PhoneNumber}" Width="*"/>
+                <DataGridTextColumn Header="Дата рождения" Binding="{Binding BirthDate, StringFormat=\{0:dd.MM.yyyy\}}" Width="*"/>
+                <DataGridTextColumn Header="Пол" Binding="{Binding Gender}" Width="*"/>
+                <DataGridTextColumn Header="Адрес" Binding="{Binding Address}" Width="*"/>
+                <DataGridTextColumn Header="Оклад" Binding="{Binding Salary}" Width="*"/>
+                <DataGridTextColumn Header="Обязанности" Binding="{Binding Responsibilities}" Width="*"/>
+                <DataGridTextColumn Header="Требования" Binding="{Binding Requirements}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page> 

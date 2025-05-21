@@ -16,12 +16,14 @@ namespace CinemaManagementSystem.Model
     {
         public Countries()
         {
+            this.Actors = new HashSet<Actors>();
             this.ProducingCompanies = new HashSet<ProducingCompanies>();
         }
     
         public short Id { get; set; }
         public string Name { get; set; }
     
+        public virtual ICollection<Actors> Actors { get; set; }
         public virtual ICollection<ProducingCompanies> ProducingCompanies { get; set; }
     }
 }

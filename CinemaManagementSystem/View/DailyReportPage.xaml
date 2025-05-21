@@ -1,0 +1,49 @@
+﻿<Page x:Class="CinemaManagementSystem.View.DailyReportPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CinemaManagementSystem.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Ежедневный отчет">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Assets/Colors/MainColors.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Формирование ежедневного отчета по проданным билетам"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   Margin="0,0,0,20" Foreground="{StaticResource PrimaryTextColor}"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,0,0,20">
+            <TextBlock Text="Выберите дату:" VerticalAlignment="Center" Margin="0,0,10,0" Foreground="{StaticResource PrimaryTextColor}"/>
+            <DatePicker x:Name="ReportDatePicker"/>
+        </StackPanel>
+
+        <Button Content="Сформировать отчёт Excel"
+                Width="160"
+                Height="40"
+                Grid.Row="2"
+                HorizontalAlignment="Left"
+                Click="PrintExcelReport_Click"/>
+        <Button Content="Сформировать отчёт Word"
+        Width="160"
+        Height="40"
+        Grid.Row="2"
+        HorizontalAlignment="Left"
+        Click="PrintWordReport_Click" Margin="190 0 0 0 "/>
+    </Grid>
+</Page>

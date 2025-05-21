@@ -16,6 +16,7 @@ namespace CinemaManagementSystem.Model
     {
         public Seats()
         {
+            this.Bookings = new HashSet<Bookings>();
             this.Tickets = new HashSet<Tickets>();
         }
     
@@ -25,6 +26,7 @@ namespace CinemaManagementSystem.Model
         public bool IsOccupied { get; set; }
         public short HallId { get; set; }
     
+        public virtual ICollection<Bookings> Bookings { get; set; }
         public virtual Halls Halls { get; set; }
         public virtual ICollection<Tickets> Tickets { get; set; }
     }

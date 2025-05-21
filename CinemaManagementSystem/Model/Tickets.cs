@@ -16,7 +16,7 @@ namespace CinemaManagementSystem.Model
     {
         public long Id { get; set; }
         public long SessionId { get; set; }
-        public int Price { get; set; }
+        public decimal Price { get; set; }
         public int SeatId { get; set; }
         public System.DateTime SaleDateTime { get; set; }
     

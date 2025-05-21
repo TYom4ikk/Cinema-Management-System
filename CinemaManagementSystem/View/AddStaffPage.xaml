@@ -1,0 +1,99 @@
+<Page x:Class="CinemaManagementSystem.View.AddStaffPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Добавление сотрудника" Height="600" Width="800">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Assets/Styles/StaffPagesStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Добавление нового сотрудника" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   Margin="0,0,0,20"/>
+
+        <ScrollViewer Grid.Row="1" Width="400">
+            <StackPanel Width="400">
+                <TextBlock Text="Фамилия" Margin="0,0,0,5"/>
+                <TextBox x:Name="LastNameTextBox" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Имя" Margin="0,0,0,5"/>
+                <TextBox x:Name="FirstNameTextBox" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Отчество" Margin="0,0,0,5"/>
+                <TextBox x:Name="MiddleNameTextBox" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Должность" Margin="0,0,0,5"/>
+                <ComboBox x:Name="PositionComboBox" 
+                          DisplayMemberPath="Name"
+                          Margin="0,0,0,10"/>
+
+                <TextBlock Text="Дата рождения" Margin="0,0,0,5"/>
+                <DatePicker x:Name="BirthDatePicker" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Пол" Margin="0,0,0,5"/>
+                <ComboBox x:Name="GenderComboBox" Margin="0,0,0,10">
+                    <ComboBoxItem Content="М"/>
+                    <ComboBoxItem Content="Ж"/>
+                </ComboBox>
+
+                <TextBlock Text="Адрес" Margin="0,0,0,5"/>
+                <TextBox x:Name="AddressTextBox" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Телефон" Margin="0,0,0,5"/>
+                <TextBox x:Name="PhoneTextBox" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Оклад" Margin="0,0,0,5"/>
+                <TextBox x:Name="SalaryTextBox" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Обязанности" Margin="0,0,0,5"/>
+                <TextBox x:Name="ResponsibilitiesTextBox" 
+                         TextWrapping="Wrap" 
+                         AcceptsReturn="True" 
+                         Height="60" 
+                         Margin="0,0,0,10"/>
+
+                <TextBlock Text="Требования" Margin="0,0,0,5"/>
+                <TextBox x:Name="RequirementsTextBox" 
+                         TextWrapping="Wrap" 
+                         AcceptsReturn="True" 
+                         Height="60" 
+                         Margin="0,0,0,10"/>
+
+                <TextBlock Text="Email" Margin="0,0,0,5"/>
+                <TextBox x:Name="EmailTextBox" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Паспортные данные" Margin="0,0,0,5"/>
+                <TextBox x:Name="PassportData" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Пароль" Margin="0,0,0,5"/>
+                <PasswordBox x:Name="PasswordBox" Margin="0,0,0,10"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <StackPanel Grid.Row="2" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Right" 
+                    Margin="0,20,0,0">
+            <Button Content="Добавить" 
+                    Width="100" 
+                    Margin="0,0,10,0" 
+                    Click="AddButton_Click"/>
+            <Button Content="Отмена" 
+                    Width="100" 
+                    Click="CancelButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Page> 

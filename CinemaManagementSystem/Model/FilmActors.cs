@@ -14,6 +14,7 @@ namespace CinemaManagementSystem.Model
     
     public partial class FilmActors
     {
+        public long Id { get; set; }
         public int FilmId { get; set; }
         public long ActorId { get; set; }
         public string Role { get; set; }

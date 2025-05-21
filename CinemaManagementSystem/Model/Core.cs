@@ -8,13 +8,13 @@ namespace CinemaManagementSystem.Model
 {
     public class Core
     {
-        private static CinemaEntities _context;
+        private static Cinema_DBEntities _context;
 
-        public static CinemaEntities GetContext()
+        public static Cinema_DBEntities GetContext()
         {
             if (_context == null)
             {
-                _context = new CinemaEntities();
+                _context = new Cinema_DBEntities();
             }
             return _context;
         }

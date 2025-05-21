@@ -4,30 +4,37 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="225b530b717a4ca4a6541ae883ed3f8e" Name="Diagram1">
-        <EntityTypeShape EntityType="CinemaModel.Actors" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CinemaModel.Countries" Width="1.5" PointX="3.75" PointY="7" IsExpanded="true" />
-        <EntityTypeShape EntityType="CinemaModel.Films" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="CinemaModel.Genres" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="CinemaModel.Halls" Width="1.5" PointX="0.75" PointY="13.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="CinemaModel.Posts" Width="1.5" PointX="8.75" PointY="2.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="CinemaModel.ProducingCompanies" Width="1.5" PointX="6" PointY="5.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="CinemaModel.Seats" Width="1.5" PointX="3" PointY="13.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="CinemaModel.Sessions" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CinemaModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="CinemaModel.Tickets" Width="1.5" PointX="5.25" PointY="9.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="CinemaModel.Workers" Width="1.5" PointX="11" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="CinemaModel.FilmActors" Width="1.5" PointX="6" PointY="2.875" IsExpanded="true" />
-        <AssociationConnector Association="CinemaModel.FK_FilmActors_Actors" ManuallyRouted="false" />
-        <AssociationConnector Association="CinemaModel.FK_ProducingCompanies_Countries" ManuallyRouted="false" />
-        <AssociationConnector Association="CinemaModel.FK_FilmActors_Films" ManuallyRouted="false" />
-        <AssociationConnector Association="CinemaModel.FK_Sessions_Films" ManuallyRouted="false" />
-        <AssociationConnector Association="CinemaModel.FK_Seats_Halls" ManuallyRouted="false" />
-        <AssociationConnector Association="CinemaModel.FK_Workers_Posts" ManuallyRouted="false" />
-        <AssociationConnector Association="CinemaModel.FK_Tickets_Seats" ManuallyRouted="false" />
-        <AssociationConnector Association="CinemaModel.FK_Tickets_Sessions" ManuallyRouted="false" />
-        <AssociationConnector Association="CinemaModel.FilmGenres" ManuallyRouted="false" />
-        <AssociationConnector Association="CinemaModel.FilmProducingCompanies" ManuallyRouted="false" />
+      <Diagram DiagramId="d7bad87a849a470aa86746cb2c391121" Name="Diagram1">
+        <EntityTypeShape EntityType="Cinema_DBModel.Actors" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cinema_DBModel.Bookings" Width="1.5" PointX="8.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cinema_DBModel.Countries" Width="1.5" PointX="1.5" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cinema_DBModel.FilmActors" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cinema_DBModel.FilmGenres" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cinema_DBModel.Films" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cinema_DBModel.Genres" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cinema_DBModel.Halls" Width="1.5" PointX="3.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cinema_DBModel.Posts" Width="1.5" PointX="8.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cinema_DBModel.ProducingCompanies" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cinema_DBModel.Seats" Width="1.5" PointX="6" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cinema_DBModel.Sessions" Width="1.5" PointX="6" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cinema_DBModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cinema_DBModel.Tickets" Width="1.5" PointX="11.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cinema_DBModel.Workers" Width="1.5" PointX="11" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="Cinema_DBModel.FK_Actors_Countries" ManuallyRouted="false" />
+        <AssociationConnector Association="Cinema_DBModel.FK_FilmActors_Actors" ManuallyRouted="false" />
+        <AssociationConnector Association="Cinema_DBModel.FK_Bookings_Seats" ManuallyRouted="false" />
+        <AssociationConnector Association="Cinema_DBModel.FK_Bookings_Sessions" ManuallyRouted="false" />
+        <AssociationConnector Association="Cinema_DBModel.FK_ProducingCompanies_Countries" ManuallyRouted="false" />
+        <AssociationConnector Association="Cinema_DBModel.FK_FilmActors_Films" ManuallyRouted="false" />
+        <AssociationConnector Association="Cinema_DBModel.FK_FilmGenres_Films" ManuallyRouted="false" />
+        <AssociationConnector Association="Cinema_DBModel.FK_FilmGenres_Genres" ManuallyRouted="false" />
+        <AssociationConnector Association="Cinema_DBModel.FK_Sessions_Films" ManuallyRouted="false" />
+        <AssociationConnector Association="Cinema_DBModel.FK_Seats_Halls" ManuallyRouted="false" />
+        <AssociationConnector Association="Cinema_DBModel.FK_Sessions_Halls" ManuallyRouted="false" />
+        <AssociationConnector Association="Cinema_DBModel.FK_Workers_Posts" ManuallyRouted="false" />
+        <AssociationConnector Association="Cinema_DBModel.FK_Tickets_Seats" ManuallyRouted="false" />
+        <AssociationConnector Association="Cinema_DBModel.FK_Tickets_Sessions" ManuallyRouted="false" />
+        <AssociationConnector Association="Cinema_DBModel.FilmProducingCompanies" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

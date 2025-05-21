@@ -1,3 +1,10 @@
 <Button Content="Фильмы" 
         Click="FilmsButton_Click"
  
+<MenuItem Header="Администратор" Visibility="{Binding IsAdmin, Converter={StaticResource BooleanToVisibilityConverter}}">
+    <MenuItem Header="Фильмы" Click="MenuItem_Click"/>
+    <MenuItem Header="Актёры" Click="MenuItem_Click"/>
+    <MenuItem Header="Сеансы" Click="MenuItem_Click"/>
+    <MenuItem Header="Сотрудники" Click="MenuItem_Click"/>
+</MenuItem>
+ 

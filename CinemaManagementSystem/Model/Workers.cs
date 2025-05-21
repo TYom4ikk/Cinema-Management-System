@@ -24,9 +24,11 @@ namespace CinemaManagementSystem.Model
         public string PhoneNumber { get; set; }
         public string PassportData { get; set; }
         public int PostId { get; set; }
-        public long Salary { get; set; }
+        public decimal Salary { get; set; }
         public string Responsibilities { get; set; }
         public string Requirements { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
     
         public virtual Posts Posts { get; set; }
     }

@@ -1,0 +1,77 @@
+﻿<Page x:Class="CinemaManagementSystem.View.EditFilmPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CinemaManagementSystem.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Редактирование фильма">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Assets/Styles/EditActorPageStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <ScrollViewer>
+        <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Редактирование фильма" FontSize="24" FontWeight="Bold" Margin="0,0,0,20" Style="{StaticResource BlackTitle}"/>
+
+           <ComboBox x:Name="FilmsComboBox"
+              DisplayMemberPath="Title"
+              SelectionChanged="FilmsComboBox_SelectionChanged"
+              Margin="0,0,0,20"/>
+
+                <StackPanel Grid.Row="1" Margin="0,0,0,10">
+            <TextBlock Text="Название фильма:" Margin="0,0,0,5" Style="{StaticResource BlackTitle}"/>
+            <TextBox x:Name="NameTextBox" Text="{Binding Title, UpdateSourceTrigger=PropertyChanged}" Padding="5"/>
+        </StackPanel>
+
+            <StackPanel Grid.Row="2" Margin="0,0,0,10">
+                <TextBlock Text="Длительность (в минутах):" Margin="0,0,0,5" Style="{StaticResource BlackTitle}"/>
+                <TextBox x:Name="DurationTextBox" Text="{Binding Duration, UpdateSourceTrigger=PropertyChanged}" Padding="5"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="3" Margin="0,0,0,10">
+            <TextBlock Text="Возрастное ограничение:" Margin="0,0,0,5" Style="{StaticResource BlackTitle}"/>
+            <ComboBox x:Name="AgeRestrictionComboBox" Padding="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" Margin="0,0,0,10">
+            <TextBlock Text="Актёры:" Margin="0,0,0,5" Style="{StaticResource BlackTitle}"/>
+            <ListBox x:Name="ActorsListBox" ItemsSource="{Binding ActorsList}" DisplayMemberPath="FullName" SelectionMode="Multiple" Height="100" ScrollViewer.VerticalScrollBarVisibility="Auto" Padding="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" Margin="0,0,0,10">
+            <TextBlock Text="Жанры:" Margin="0,0,0,5" Style="{StaticResource BlackTitle}"/>
+            <ListBox x:Name="GenresListBox" ItemsSource="{Binding GenresList}" DisplayMemberPath="Name" SelectionMode="Multiple" Height="100" ScrollViewer.VerticalScrollBarVisibility="Auto" Padding="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="6" Margin="0,0,0,10">
+            <TextBlock Text="Описание:" Margin="0,0,0,5" Style="{StaticResource BlackTitle}"/>
+            <TextBox x:Name="DescriptionTextBox" Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}" Height="100" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Padding="5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Button Content="Сохранить" Click="SaveButton_Click" Width="100" Height="30" Margin="0,0,10,0"/>
+            <Button Content="Отмена" Click="CancelButton_Click" Width="100" Height="30"/>
+            <Button Content="Удалить" Click="DeleteButton_Click" Width="100" Height="30" Margin="10,0,0,0"/>
+        </StackPanel>
+    </Grid>
+    </ScrollViewer>
+</Page>

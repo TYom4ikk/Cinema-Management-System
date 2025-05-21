@@ -38,6 +38,9 @@
     <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
@@ -56,64 +59,31 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="Microsoft.Office.Interop.Word">
+      <HintPath>packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\ActorListPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\AddActorPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\AddFilmPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\AddSessionPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\SchedulePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\SellTicketPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\FilmsListPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\SalesStatisticsPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Classes\DailyReport.cs" />
+    <Compile Include="Classes\ExportDialog.cs" />
+    <Compile Include="Classes\TicketExporter.cs" />
     <Compile Include="Model\Actors.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Core.cs" />
+    <Compile Include="Model\Bookings.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\Countries.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\FilmActors.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FilmGenres.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\Films.cs">
@@ -140,6 +110,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Model\PartialClasses\Actors.cs" />
+    <Compile Include="Model\PartialClasses\Workers.cs" />
     <Compile Include="Model\Posts.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -161,6 +133,123 @@
     <Compile Include="Model\Workers.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\ActorListPageViewModel.cs" />
+    <Compile Include="ViewModel\AddActorPageViewModel.cs" />
+    <Compile Include="ViewModel\AddFilmPageViewModel.cs" />
+    <Compile Include="ViewModel\AddSessionPageViewModel.cs" />
+    <Compile Include="ViewModel\AddStaffPageViewModel.cs" />
+    <Compile Include="ViewModel\BuyTicketPageViewModel.cs" />
+    <Compile Include="ViewModel\DailyReportPageViewModel.cs" />
+    <Compile Include="ViewModel\EditFilmPageViewModel.cs" />
+    <Compile Include="ViewModel\EditStaffPageViewModel.cs" />
+    <Compile Include="ViewModel\FilmsListPageViewModel.cs" />
+    <Compile Include="ViewModel\HallViewModel.cs" />
+    <Compile Include="ViewModel\SalesStatisticsPageViewModel.cs" />
+    <Compile Include="ViewModel\SchedulePageViewModel.cs" />
+    <Compile Include="ViewModel\StaffListPageViewModel.cs" />
+    <Compile Include="View\DailyReportPage.xaml.cs">
+      <DependentUpon>DailyReportPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EditFilmPage.xaml.cs">
+      <DependentUpon>EditFilmPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EditStaffPage.xaml.cs">
+      <DependentUpon>EditStaffPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\FullFilmInfoWindow.xaml.cs">
+      <DependentUpon>FullFilmInfoWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Assets\Styles\AddActorPageStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\Styles\EditActorPageStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\Styles\FullFilmInfoWindowStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\Styles\SalesStatisticsPageStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\Styles\StaffPagesStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ActorListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AddActorPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\AddFilmPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AddSessionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DailyReportPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EditFilmPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EditStaffPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RegistrationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SchedulePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\BuyTicketPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\FilmsListPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\SalesStatisticsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\StaffListPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\AddStaffPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Core.cs" />
+    <Compile Include="Model\PartialClasses\Films.cs" />
+    <Compile Include="ViewModel\RegistrationPageViewModel.cs" />
     <Compile Include="View\ActorListPage.xaml.cs">
       <DependentUpon>ActorListPage.xaml</DependentUpon>
     </Compile>
@@ -174,11 +263,14 @@
     <Compile Include="View\AddSessionPage.xaml.cs">
       <DependentUpon>AddSessionPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\RegistrationPage.xaml.cs">
+      <DependentUpon>RegistrationPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\SchedulePage.xaml.cs">
       <DependentUpon>SchedulePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\SellTicketPage.xaml.cs">
-      <DependentUpon>SellTicketPage.xaml</DependentUpon>
+    <Compile Include="View\BuyTicketPage.xaml.cs">
+      <DependentUpon>BuyTicketPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\FilmsListPage.xaml.cs">
       <DependentUpon>FilmsListPage.xaml</DependentUpon>
@@ -187,6 +279,16 @@
     <Compile Include="View\SalesStatisticsPage.xaml.cs">
       <DependentUpon>SalesStatisticsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\StaffListPage.xaml.cs">
+      <DependentUpon>StaffListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddStaffPage.xaml.cs">
+      <DependentUpon>AddStaffPage.xaml</DependentUpon>
+    </Compile>
+    <Page Include="View\Windows\FullFilmInfoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -226,7 +328,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ViewModel\" />
+    <Resource Include="Assets\Colors\MainColors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Model\Model.Context.tt">

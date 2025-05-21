@@ -17,8 +17,8 @@ namespace CinemaManagementSystem.Model
         public Films()
         {
             this.FilmActors = new HashSet<FilmActors>();
+            this.FilmGenres = new HashSet<FilmGenres>();
             this.Sessions = new HashSet<Sessions>();
-            this.Genres = new HashSet<Genres>();
             this.ProducingCompanies = new HashSet<ProducingCompanies>();
         }
     
@@ -29,8 +29,8 @@ namespace CinemaManagementSystem.Model
         public byte AgeRestriction { get; set; }
     
         public virtual ICollection<FilmActors> FilmActors { get; set; }
+        public virtual ICollection<FilmGenres> FilmGenres { get; set; }
         public virtual ICollection<Sessions> Sessions { get; set; }
-        public virtual ICollection<Genres> Genres { get; set; }
         public virtual ICollection<ProducingCompanies> ProducingCompanies { get; set; }
     }
 }

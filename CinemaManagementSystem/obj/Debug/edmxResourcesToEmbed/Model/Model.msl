@@ -1,27 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище CinemaModelContainer" CdmEntityContainer="CinemaEntities">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Cinema_DBModelContainer" CdmEntityContainer="Cinema_DBEntities">
     <EntitySetMapping Name="Actors">
-      <EntityTypeMapping TypeName="CinemaModel.Actors">
+      <EntityTypeMapping TypeName="Cinema_DBModel.Actors">
         <MappingFragment StoreEntitySet="Actors">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="FirstName" ColumnName="FirstName" />
           <ScalarProperty Name="LastName" ColumnName="LastName" />
           <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
           <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bookings">
+      <EntityTypeMapping TypeName="Cinema_DBModel.Bookings">
+        <MappingFragment StoreEntitySet="Bookings">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="SeatId" ColumnName="SeatId" />
+          <ScalarProperty Name="SaleDateTime" ColumnName="SaleDateTime" />
+          <ScalarProperty Name="ExpiresDateTime" ColumnName="ExpiresDateTime" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Countries">
-      <EntityTypeMapping TypeName="CinemaModel.Countries">
+      <EntityTypeMapping TypeName="Cinema_DBModel.Countries">
         <MappingFragment StoreEntitySet="Countries">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="FilmActors">
+      <EntityTypeMapping TypeName="Cinema_DBModel.FilmActors">
+        <MappingFragment StoreEntitySet="FilmActors">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FilmId" ColumnName="FilmId" />
+          <ScalarProperty Name="ActorId" ColumnName="ActorId" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FilmGenres">
+      <EntityTypeMapping TypeName="Cinema_DBModel.FilmGenres">
+        <MappingFragment StoreEntitySet="FilmGenres">
+          <ScalarProperty Name="FilmId" ColumnName="FilmId" />
+          <ScalarProperty Name="GenreId" ColumnName="GenreId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Films">
-      <EntityTypeMapping TypeName="CinemaModel.Films">
+      <EntityTypeMapping TypeName="Cinema_DBModel.Films">
         <MappingFragment StoreEntitySet="Films">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Title" ColumnName="Title" />
@@ -32,7 +63,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Genres">
-      <EntityTypeMapping TypeName="CinemaModel.Genres">
+      <EntityTypeMapping TypeName="Cinema_DBModel.Genres">
         <MappingFragment StoreEntitySet="Genres">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -41,7 +72,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Halls">
-      <EntityTypeMapping TypeName="CinemaModel.Halls">
+      <EntityTypeMapping TypeName="Cinema_DBModel.Halls">
         <MappingFragment StoreEntitySet="Halls">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -51,7 +82,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Posts">
-      <EntityTypeMapping TypeName="CinemaModel.Posts">
+      <EntityTypeMapping TypeName="Cinema_DBModel.Posts">
         <MappingFragment StoreEntitySet="Posts">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -59,7 +90,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ProducingCompanies">
-      <EntityTypeMapping TypeName="CinemaModel.ProducingCompanies">
+      <EntityTypeMapping TypeName="Cinema_DBModel.ProducingCompanies">
         <MappingFragment StoreEntitySet="ProducingCompanies">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -68,7 +99,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Seats">
-      <EntityTypeMapping TypeName="CinemaModel.Seats">
+      <EntityTypeMapping TypeName="Cinema_DBModel.Seats">
         <MappingFragment StoreEntitySet="Seats">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
@@ -79,17 +110,19 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Sessions">
-      <EntityTypeMapping TypeName="CinemaModel.Sessions">
+      <EntityTypeMapping TypeName="Cinema_DBModel.Sessions">
         <MappingFragment StoreEntitySet="Sessions">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
           <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
           <ScalarProperty Name="FilmId" ColumnName="FilmId" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="HallId" ColumnName="HallId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="CinemaModel.sysdiagrams">
+      <EntityTypeMapping TypeName="Cinema_DBModel.sysdiagrams">
         <MappingFragment StoreEntitySet="sysdiagrams">
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="principal_id" ColumnName="principal_id" />
@@ -100,7 +133,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Tickets">
-      <EntityTypeMapping TypeName="CinemaModel.Tickets">
+      <EntityTypeMapping TypeName="Cinema_DBModel.Tickets">
         <MappingFragment StoreEntitySet="Tickets">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="SessionId" ColumnName="SessionId" />
@@ -111,7 +144,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Workers">
-      <EntityTypeMapping TypeName="CinemaModel.Workers">
+      <EntityTypeMapping TypeName="Cinema_DBModel.Workers">
         <MappingFragment StoreEntitySet="Workers">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="FirstName" ColumnName="FirstName" />
@@ -126,27 +159,12 @@
           <ScalarProperty Name="Salary" ColumnName="Salary" />
           <ScalarProperty Name="Responsibilities" ColumnName="Responsibilities" />
           <ScalarProperty Name="Requirements" ColumnName="Requirements" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="FilmActors">
-      <EntityTypeMapping TypeName="CinemaModel.FilmActors">
-        <MappingFragment StoreEntitySet="FilmActors">
-          <ScalarProperty Name="FilmId" ColumnName="FilmId" />
-          <ScalarProperty Name="ActorId" ColumnName="ActorId" />
-          <ScalarProperty Name="Role" ColumnName="Role" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <AssociationSetMapping Name="FilmGenres" TypeName="CinemaModel.FilmGenres" StoreEntitySet="FilmGenres">
-      <EndProperty Name="Films">
-        <ScalarProperty Name="Id" ColumnName="FilmId" />
-      </EndProperty>
-      <EndProperty Name="Genres">
-        <ScalarProperty Name="Id" ColumnName="GenreId" />
-      </EndProperty>
-    </AssociationSetMapping>
-    <AssociationSetMapping Name="FilmProducingCompanies" TypeName="CinemaModel.FilmProducingCompanies" StoreEntitySet="FilmProducingCompanies">
+    <AssociationSetMapping Name="FilmProducingCompanies" TypeName="Cinema_DBModel.FilmProducingCompanies" StoreEntitySet="FilmProducingCompanies">
       <EndProperty Name="Films">
         <ScalarProperty Name="Id" ColumnName="FilmId" />
       </EndProperty>

@@ -1,0 +1,181 @@
+<Page x:Class="CinemaManagementSystem.View.BuyTicketPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CinemaManagementSystem.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Покупка билета">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Assets/Colors/MainColors.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Покупка билета" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   Margin="0,0,0,20"
+                   Foreground="{StaticResource PrimaryTextColor}"/>
+
+        <Border Grid.Row="1" 
+                BorderBrush="{StaticResource AccentColor}" 
+                BorderThickness="1" 
+                Padding="20"
+                Background="White">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="{Binding FilmTitle}" 
+                           FontSize="20" 
+                           FontWeight="Bold" 
+                           Margin="0,0,0,10"
+                           Foreground="{StaticResource SecondaryTextColor}"/>
+
+                <TextBlock Grid.Row="1" 
+                           Text="{Binding SessionDateTime}" 
+                           FontSize="16" 
+                           Margin="0,0,0,10"
+                           Foreground="{StaticResource SecondaryTextColor}"/>
+
+                <TextBlock Grid.Row="2" 
+                           Text="{Binding HallName}" 
+                           FontSize="16" 
+                           Margin="0,0,0,10"
+                           Foreground="{StaticResource SecondaryTextColor}"/>
+
+                <TextBlock Grid.Row="3" 
+                           Text="{Binding Price}" 
+                           FontSize="16" 
+                           Margin="0,0,0,10"
+                           Foreground="{StaticResource SecondaryTextColor}"/>
+
+                <TextBlock Grid.Row="4" 
+                           Text="Выберите место:" 
+                           FontSize="16" 
+                           Margin="0,0,0,10"
+                           Foreground="{StaticResource SecondaryTextColor}"/>
+
+                <ScrollViewer Grid.Row="5">
+                    <ItemsControl ItemsSource="{Binding Seats}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <UniformGrid Rows="{Binding SelectedHall.RowsCount}"
+                                 Columns="{Binding ColumnsCount}"
+                                 Margin="10"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Button Content="{Binding SeatNumber}"
+                                            Margin="3"
+                                            ToolTip="Ряд: {Binding RowNumber}, Место: {Binding SeatNumber}"
+                                            Click="SeatButton_Click"
+                                            Tag="{Binding}">            
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Setter Property="Background" Value="LightGreen"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsOccupied}" Value="True">
+                                                    <Setter Property="Background" Value="Red"/>
+                                                    <Setter Property="IsEnabled" Value="False"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Grid>
+        </Border>
+
+        <StackPanel Grid.Row="2" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Right" 
+                    Margin="0,20,0,0">
+            <Button Content="Бронировать место" 
+        Click="BookTicketButton_Click"
+        Width="120" 
+        Height="30" 
+        Margin="0,0,10,0"
+        Background="{StaticResource ButtonBackground}"
+        Foreground="{StaticResource ButtonForeground}">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="{StaticResource ButtonBackgroundHover}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="{StaticResource ButtonBackgroundHover}"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Button Content="Купить билет" 
+                    Click="BuyTicketButton_Click"
+                    Width="120" 
+                    Height="30" 
+                    Margin="0,0,10,0"
+                    Background="{StaticResource ButtonBackground}"
+                    Foreground="{StaticResource ButtonForeground}">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="{StaticResource ButtonBackgroundHover}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="{StaticResource ButtonBackgroundHover}"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button Content="Отмена" 
+                    Click="CancelButton_Click"
+                    Width="120" 
+                    Height="30"
+                    Background="{StaticResource ButtonBackground}"
+                    Foreground="{StaticResource ButtonForeground}">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="{StaticResource ButtonBackgroundHover}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="{StaticResource ButtonBackgroundHover}"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page> 

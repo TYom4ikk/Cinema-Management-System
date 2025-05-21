@@ -1,63 +1,57 @@
 <Page x:Class="CinemaManagementSystem.View.AddActorPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      Title="Добавление актера" Height="600" Width="800">
+      Title="Добавление актёра" Height="600" Width="800">
+    
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Assets/Styles/AddActorPageStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Добавление нового актера" 
+        <TextBlock Text="Добавление актёра" 
                    FontSize="24" 
                    FontWeight="Bold" 
-                   Margin="0,0,0,20"/>
+                   Margin="0,0,0,20" Style="{StaticResource WhiteTitle}"/>
 
-        <StackPanel Grid.Row="1" Margin="0,0,0,10">
-            <TextBlock Text="Имя:" Margin="0,0,0,5"/>
-            <TextBox x:Name="FirstNameTextBox" 
-                     Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged}"
-                     Padding="5"/>
+        <StackPanel Grid.Row="1" Margin="0,0,0,20">
+            <TextBlock Text="Имя:" Margin="0,0,0,5" Style="{StaticResource WhiteTitle}"/>
+            <TextBox x:Name="FirstNameTextBox" Height="30" Margin="0,0,0,15"/>
+
+            <TextBlock Text="Фамилия:" Margin="0,0,0,5" Style="{StaticResource WhiteTitle}"/>
+            <TextBox x:Name="LastNameTextBox" Height="30" Margin="0,0,0,15"/>
+
+            <TextBlock Text="Отчество:" Margin="0,0,0,5" Style="{StaticResource WhiteTitle}"/>
+            <TextBox x:Name="MiddleNameTextBox" Height="30" Margin="0,0,0,15"/>
+
+            <TextBlock Text="Дата рождения:" Margin="0,0,0,5" Style="{StaticResource WhiteTitle}"/>
+            <DatePicker x:Name="BirthDatePicker" Height="30" Margin="0,0,0,15"/>
+
+            <TextBlock Text="Страна:" Margin="0,0,0,5" Style="{StaticResource WhiteTitle}"/>
+            <ComboBox x:Name="CountryComboBox" Height="30" Margin="0,0,0,15" DisplayMemberPath="Name"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="2" Margin="0,0,0,10">
-            <TextBlock Text="Фамилия:" Margin="0,0,0,5"/>
-            <TextBox x:Name="LastNameTextBox" 
-                     Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged}"
-                     Padding="5"/>
-        </StackPanel>
-
-        <StackPanel Grid.Row="3" Margin="0,0,0,10">
-            <TextBlock Text="Отчество:" Margin="0,0,0,5"/>
-            <TextBox x:Name="MiddleNameTextBox" 
-                     Text="{Binding MiddleName, UpdateSourceTrigger=PropertyChanged}"
-                     Padding="5"/>
-        </StackPanel>
-
-        <StackPanel Grid.Row="4" Margin="0,0,0,10">
-            <TextBlock Text="Дата рождения:" Margin="0,0,0,5"/>
-            <DatePicker x:Name="BirthDatePicker" 
-                        SelectedDate="{Binding BirthDate, UpdateSourceTrigger=PropertyChanged}"
-                        Padding="5"/>
-        </StackPanel>
-
-        <StackPanel Grid.Row="5" 
+        <StackPanel Grid.Row="2" 
                     Orientation="Horizontal" 
-                    HorizontalAlignment="Right" 
-                    VerticalAlignment="Bottom">
-            <Button Content="Сохранить" 
-                    Click="SaveButton_Click"
-                    Width="100" 
+                    HorizontalAlignment="Right">
+            <Button Content="Добавить" 
+                    Width="120" 
                     Height="30" 
-                    Margin="0,0,10,0"/>
+                    Margin="0,0,10,0" 
+                    Click="AddButton_Click"/>
             <Button Content="Отмена" 
-                    Click="CancelButton_Click"
-                    Width="100" 
-                    Height="30"/>
+                    Width="120" 
+                    Height="30" 
+                    Click="CancelButton_Click"/>
         </StackPanel>
     </Grid>
 </Page> 

@@ -16,6 +16,7 @@ namespace CinemaManagementSystem.Model
     {
         public Sessions()
         {
+            this.Bookings = new HashSet<Bookings>();
             this.Tickets = new HashSet<Tickets>();
         }
     
@@ -23,8 +24,12 @@ namespace CinemaManagementSystem.Model
         public Nullable<System.DateTime> StartDateTime { get; set; }
         public Nullable<System.DateTime> EndDateTime { get; set; }
         public int FilmId { get; set; }
+        public decimal Price { get; set; }
+        public short HallId { get; set; }
     
+        public virtual ICollection<Bookings> Bookings { get; set; }
         public virtual Films Films { get; set; }
+        public virtual Halls Halls { get; set; }
         public virtual ICollection<Tickets> Tickets { get; set; }
     }
 }

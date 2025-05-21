@@ -2,68 +2,91 @@ using System;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Documents;
 using CinemaManagementSystem.Model;
 using CinemaManagementSystem.View;
+using CinemaManagementSystem.ViewModel;
 
 namespace CinemaManagementSystem.View
 {
     public partial class SchedulePage : Page
     {
-        private readonly bool _isBookingMode;
-
-        public SchedulePage(bool isBookingMode = false)
+        private SchedulePageViewModel model;
+        public SchedulePage()
         {
             InitializeComponent();
-            _isBookingMode = isBookingMode;
+            model = new SchedulePageViewModel();
             DateFilter.SelectedDate = DateTime.Today;
             LoadSessions();
         }
 
-        private void LoadSessions(DateTime? date = null)
+        /// <summary>
+        /// Загружает все сеансы из базы данных и отображает их в таблице.
+        /// </summary>
+        /// <remarks>
+        /// При возникновении ошибки выводится сообщение с описанием.
+        /// </remarks>
+        private void LoadSessions()
         {
             try
             {
-                var query = Core.GetContext().Sessions.AsQueryable();
+                var sessions = model.GetSessions();
 
-                if (date.HasValue)
-                {
-                    query = query.Where(s => s.StartDateTime == date.Value.Date);
-                }
-                var sessions = query.OrderBy(s => s.StartDateTime).ToList();
                 SessionsDataGrid.ItemsSource = sessions;
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка при загрузке сеансов: {ex.Message}", 
-                              "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Ошибка при загрузке сеансов: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
+        /// <summary>
+        /// Обрабатывает нажатие кнопки фильтрации сеансов по дате.
+        /// </summary>
+        /// <param name="sender">Источник события — кнопка "Показать".</param>
+        /// <param name="e">Аргументы события нажатия.</param>
+        /// <remarks>
+        /// Если дата выбрана, загружаются только сеансы на эту дату. В случае ошибки отображается сообщение.
+        /// </remarks>
         private void ShowButton_Click(object sender, RoutedEventArgs e)
         {
-            LoadSessions(DateFilter.SelectedDate);
-        }
+            if (DateFilter.SelectedDate.HasValue)
+            {
+                try
+                {
+                    var sessions = model.GetSessionsDateFilter(DateFilter.SelectedDate.Value.Date);
 
+                    SessionsDataGrid.ItemsSource = sessions;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ошибка при фильтрации сеансов: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+        }
+        /// <summary>
+        /// Сбрасывает фильтр по дате и загружает все сеансы.
+        /// </summary>
+        /// <param name="sender">Источник события — кнопка "Сброс".</param>
+        /// <param name="e">Аргументы события нажатия.</param>
         private void ResetButton_Click(object sender, RoutedEventArgs e)
         {
-            DateFilter.SelectedDate = DateTime.Today;
-            LoadSessions(DateFilter.SelectedDate);
+            DateFilter.SelectedDate = null;
+            LoadSessions();
         }
 
+        /// <summary>
+        /// Обрабатывает выбор сеанса в таблице и переходит на страницу покупки билета для выбранного сеанса.
+        /// </summary>
+        /// <param name="sender">Источник события — таблица с сеансами.</param>
+        /// <param name="e">Аргументы изменения выбора.</param>
         private void SessionsDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (SessionsDataGrid.SelectedItem is Sessions selectedSession)
             {
-               /* if (_isBookingMode)
-                    NavigationService.Navigate(new BookTicketPage(selectedSession));*/
-               
-                    NavigationService.Navigate(new SellTicketPage(selectedSession));
+                NavigationService.Navigate(new BuyTicketPage(selectedSession));
             }
         }
 
-        private void SellTicketButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+      
     }
 } 

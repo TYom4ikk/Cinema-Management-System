@@ -24,7 +24,9 @@ namespace CinemaManagementSystem.Model
         public string LastName { get; set; }
         public string MiddleName { get; set; }
         public Nullable<System.DateTime> BirthDate { get; set; }
+        public short CountryId { get; set; }
     
+        public virtual Countries Countries { get; set; }
         public virtual ICollection<FilmActors> FilmActors { get; set; }
     }
 }
